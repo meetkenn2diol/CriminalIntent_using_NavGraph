@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/crime_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="@string/crime_photo_no_image_description"
+        android:cropToPadding="true"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@id/crime_camera"
+        app:layout_constraintEnd_toEndOf="@id/crime_camera"
+        app:layout_constraintHeight_max="126dp"
+        app:layout_constraintHeight_min="80dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615"
+        app:layout_constraintWidth_max="126dp"
+        app:layout_constraintWidth_min="80dp"
+        android:labelFor="@+id/crime_camera" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/crime_camera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/crime_photo_button_description"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="@id/crime_date_button"
+        app:layout_constraintEnd_toStartOf="@id/crime_date_button"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_title_label"
+        app:layout_constraintBottom_toTopOf="@+id/crime_title_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/crime_photo"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/crime_title_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/crime_title_hint"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatTextView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/crime_photo"
+        app:layout_constraintTop_toBottomOf="@id/appCompatTextView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView2"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_details_label"
+        app:layout_constraintBottom_toTopOf="@+id/crime_date_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/crime_photo"
+        app:layout_constraintTop_toBottomOf="@id/crime_title_editText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/crime_date_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/crime_solved_checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/crime_photo"
+        app:layout_constraintTop_toBottomOf="@id/appCompatTextView2"
+        tools:text="Wed Nov 14 11:56 EST 2018" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/crime_solved_checkBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_solved_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/crime_date_button" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/crime_suspect_phone_number_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_call"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/crime_suspect_phone_number"
+        app:layout_constraintBottom_toTopOf="@id/crime_report_button"
+        app:layout_constraintEnd_toStartOf="@id/crime_suspect_button"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/crime_solved_checkBox" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/crime_suspect_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_suspect_text"
+        app:layout_constraintBottom_toTopOf="@+id/crime_report_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@id/crime_suspect_phone_number_button"
+        app:layout_constraintTop_toBottomOf="@id/crime_solved_checkBox" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/crime_report_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_report_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

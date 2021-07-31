@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/crimeListFragment">
+
+    <fragment
+        android:id="@+id/crimeListFragment"
+        android:name="com.bignerdbranch.android.criminalintent.CrimeListFragment"
+        android:label="CrimeListFragment">
+        <action
+            android:id="@+id/action_crimeListFragment_to_crimeFragment"
+            app:destination="@id/crimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/crimeFragment"
+        android:name="com.bignerdbranch.android.criminalintent.CrimeFragment"
+        android:label="CrimeFragment">
+        <argument
+            android:name="uuidhelper"
+            app:argType="com.bignerdbranch.android.criminalintent.UUIDHelper" />
+    </fragment>
+</navigation>

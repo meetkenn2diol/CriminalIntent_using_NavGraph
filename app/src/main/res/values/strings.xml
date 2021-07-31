@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">CriminalIntent</string>
+    <!--CrimeListFragment and CrimeFragment Labels-->
+    <string name="crime_title_hint">Enter a title for the crime.</string>
+    <string name="crime_title_label">Title</string>
+    <string name="crime_details_label">Details</string>
+    <string name="crime_solved_label">Solved</string>
+    <string name="crime_title">Crime Title</string>
+    <string name="crime_date">Crime Date</string>
+    <string name="crime_requires_police">Contact Police</string>
+    <string name="imageview_handcuff_content_description">Handcuffs... The case has been solved</string>
+    <string name="crime_suspect_phone_number">Call the Suspect</string>
+    <!--Appbar labels -->
+    <string name="new_crime">New Crime</string>
+    <string name="add_new_crime">Add a New Crime</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_crime">There are no Crimes in the List</string>
+    <string name="icon_for_no_crimes">Icon For No Crimes</string>
+    <!--Crime Report-->
+    <string name="crime_suspect_text">CHOOSE SUSPECT</string>
+    <string name="crime_report_text">SEND CRIME REPORT</string>
+    <string name="crime_report">%1$s! The crime was discovered on %2$s. %3$s, and %4$s</string>
+    <string name="crime_report_solved">The case is solved</string>
+    <string name="crime_report_unsolved">The case is not solved</string>
+    <string name="crime_report_no_suspect">there is no suspect.</string>
+    <string name="crime_report_suspect">the suspect is %s.</string>
+    <string name="crime_report_subject">CriminalIntent Crime Report</string>
+    <string name="send_report">Send crime report via</string>
+    <!--For Permissions Request-->
+    <string name="permission_required">Contact access is required to get Suspect Information</string>
+    <string name="ok">OK</string>
+    <string name="permission_granted">Permission is granted. You can access Contact now</string>
+    <string name="select_language">select language</string>
+   <!-- For language Selection-->
+    <string name="english">English</string>
+    <string name="spanish">Spanish</string>
+    <string name="crime_image">The Enlarged Image of the Crime</string>
+
+    <string name="crime_photo_button_description">Take photo of crime scene</string>
+    <string name="crime_photo_no_image_description">
+Crime scene photo (not set)
+</string>
+    <string name="crime_photo_image_description">Crime scene photo (set)</string>
+</resources>
